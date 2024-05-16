@@ -30,7 +30,7 @@
     },
 	"autoload" : {
 		"psr-4" : {
-			"n2n\\spec\\dbo\\" : "src/app/n2n/spec/valobj"
+			"n2n\\spec\\valobj\\" : "src/app/n2n/spec/valobj"
 		}
 	}
 }
