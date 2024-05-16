@@ -1,0 +1,36 @@
+{
+	"name" : "n2n/n2n-spec-valobj",
+	"type" : "library",
+	"description" : "Specifies an abstraction of basic value objects used in Domain Driven Design.",
+	"keywords" : [
+		"n2n",
+		"framework",
+        "domain driven design",
+        "value object"
+	],
+	"homepage" : "https://www.n2n.ch",
+	"license" : "LGPL-3.0-or-later",
+	"authors" : [
+        {
+			"name" : "Andreas von Burg",
+			"email" : "a@von-burg.net",
+			"homepage" : "https://andreas.von-burg.net"
+		}
+	],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"config" : {
+		"vendor-dir" : "src/vendor"
+	},
+	"require" : {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "n2n/n2n-util": "^7.4"
+    },
+	"autoload" : {
+		"psr-4" : {
+			"n2n\\spec\\dbo\\" : "src/app/n2n/spec/valobj"
+		}
+	}
+}
