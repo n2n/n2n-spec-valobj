@@ -20,16 +20,7 @@
  * Thomas Günther.......: Developer, Hangar
  */
 namespace n2n\spec\valobj\scalar;
+interface ScalarValueObject {
 
-use n2n\spec\valobj\err\IllegalValueException;
-
-interface FloatValueObject extends ScalarValueObject {
-
-	/**
-	 * @param float $value
-	 * @throws IllegalValueException if passed value is invalid.
-	 */
-	function __construct(float $value);
-
-	function toScalar(): float;
+	function toScalar(): string|int|float|bool;
 }

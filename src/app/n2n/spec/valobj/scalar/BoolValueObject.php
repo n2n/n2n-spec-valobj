@@ -23,7 +23,7 @@ namespace n2n\spec\valobj\scalar;
 
 use n2n\spec\valobj\err\IllegalValueException;
 
-interface BoolValueObject {
+interface BoolValueObject extends ScalarValueObject {
 
 	/**
 	 * @param bool $value
@@ -31,5 +31,5 @@ interface BoolValueObject {
 	 */
 	function __construct(bool $value);
 
-	function toValue(): bool;
+	function toScalar(): bool;
 }

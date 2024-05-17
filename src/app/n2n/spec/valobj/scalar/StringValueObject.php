@@ -23,7 +23,7 @@ namespace n2n\spec\valobj\scalar;
 
 use n2n\spec\valobj\err\IllegalValueException;
 
-interface StringValueObject {
+interface StringValueObject extends ScalarValueObject {
 
 	/**
 	 * @param string $value
@@ -31,5 +31,5 @@ interface StringValueObject {
 	 */
 	function __construct(string $value);
 
-	function toValue(): string;
+	function toScalar(): string;
 }
