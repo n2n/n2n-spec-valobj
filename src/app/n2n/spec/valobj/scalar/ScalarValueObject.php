@@ -20,6 +20,7 @@
  * Thomas Günther.......: Developer, Hangar
  */
 namespace n2n\spec\valobj\scalar;
+
 interface ScalarValueObject {
 
 	function toScalar(): string|int|float|bool;
